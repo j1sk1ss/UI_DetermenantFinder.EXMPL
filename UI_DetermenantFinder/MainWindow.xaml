@@ -1,0 +1,36 @@
+﻿<Window x:Class="UI_DetermenantFinder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI_DetermenantFinder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="470" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <ScrollViewer Height="400"
+                      VerticalAlignment="Top">
+            <Label x:Name="Answer"></Label>
+        </ScrollViewer>
+        
+        <Line X1 = "0" Y1 = "400"
+              X2 = "800" Y2 = "400"
+              Stroke="Black"></Line>
+        
+        <Button Height="25"
+                Width="100"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Click="CreateMatrix">
+            Задать матрицу
+        </Button>
+        
+        <Button Height="25"
+                Width="100"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Click="GetDeterminant">
+            Получить определитель
+        </Button>
+    </Grid>
+</Window>
