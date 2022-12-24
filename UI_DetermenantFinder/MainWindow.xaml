@@ -13,21 +13,18 @@
             <Label x:Name="Answer"></Label>
         </ScrollViewer>
         
-        <Line X1 = "0" Y1 = "400"
-              X2 = "800" Y2 = "400"
-              Stroke="Black"></Line>
-        
         <Button Height="25"
                 Width="100"
-                HorizontalAlignment="Right"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
+                Margin="0,0,0,30"
                 Click="CreateMatrix">
             Задать матрицу
         </Button>
         
         <Button Height="25"
-                Width="100"
-                HorizontalAlignment="Left"
+                Width="150"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
                 Click="GetDeterminant">
             Получить определитель
