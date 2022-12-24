@@ -18,18 +18,26 @@ namespace UI_DetermenantFinder.Windows
         private int _ySize = 2;
         public void IncreaseXSize(object sender, RoutedEventArgs routedEventArgs) {
             _xSize++;
+            _ySize++;
             UpdateInterface();
         }
         public void IncreaseYSize(object sender, RoutedEventArgs routedEventArgs) {
+            _xSize++;
             _ySize++;
             UpdateInterface();
         }
         public void DecreaseXSize(object sender, RoutedEventArgs routedEventArgs) {
-            if (_xSize > 2) _xSize--;
+            if (_xSize > 2) {
+                _xSize--;
+                _ySize--;
+            }
             UpdateInterface();
         }
         public void DecreaseYSize(object sender, RoutedEventArgs routedEventArgs) {
-            if (_ySize > 2) _ySize--;
+            if (_ySize > 2) {
+                _xSize--;
+                _ySize--;
+            }
             UpdateInterface();
         }
         private void UpdateInterface() {
